@@ -1,0 +1,39 @@
+body 
+{
+    height: 100vh;
+}
+
+/* SIMULANDO CONTEUDO */
+.quadrado 
+{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    margin: 5px;
+}
+
+
+.rodape 
+{
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	margin-top: 50px;
+}
+.ul_rodape
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.li_rodape
+{
+	display: inline-block;
+	margin: 0 10px;
+}
+.a_rodape
+{
+	color: #fff;
+	text-decoration: none;
+}
