@@ -1,0 +1,70 @@
+.imagem-texto 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-right: 20rem;
+    margin-left: 20rem;
+    text-align: left; 
+}
+.imagem-texto .imagem 
+{
+    margin-right: 5rem;
+    flex-shrink: 0; 
+}
+.imagem-texto .imagem img 
+{
+    width: 150px; 
+    height: auto;
+    border-radius: 8px;
+}
+.imagem-texto p 
+{
+    justify-content: center; 
+    margin-left: 5rem;
+}
+.funcionarios 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.funcionario 
+{
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: calc(20% - 2rem);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+.funcionario img 
+{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.funcionario h3 
+{
+    margin-top: 1rem;
+    color: #333;
+}
+.funcionario p 
+{
+    margin-top: 0.5rem; /* diminui o espaçamento acima */
+    margin-bottom: 0;   /* remove o espaçamento abaixo */
+    line-height: 1.2;   /* ajusta altura da linha */
+}
+footer 
+{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
