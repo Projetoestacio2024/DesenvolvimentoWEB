@@ -3,25 +3,27 @@
     display: flex;
     align-items: center;
     justify-content: center; 
-    margin-right: 20rem;
-    margin-left: 20rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     text-align: left; 
 }
-.imagem-texto .imagem 
+/*.imagem-texto .imagem 
 {
     margin-right: 5rem;
     flex-shrink: 0; 
-}
+}*/
 .imagem-texto .imagem img 
 {
-    width: 150px; 
+    justify-content: center;
+    flex-shrink: 0;
+    width: auto; 
     height: auto;
     border-radius: 8px;
 }
-.imagem-texto p 
+.imagem-texto .imgclass 
 {
     justify-content: center; 
-    margin-left: 5rem;
+    margin-left: 3rem;
 }
 .funcionarios 
 {
@@ -62,7 +64,7 @@
 footer 
 {
     background-color: #333;
-    color: white;
+    color:darkcyan;
     text-align: center;
     padding: 1rem;
     bottom: 0;

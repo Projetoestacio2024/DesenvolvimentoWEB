@@ -1,25 +1,10 @@
-body 
-{
-    height: 100vh;
-}
-
-/* SIMULANDO CONTEUDO */
-.quadrado 
-{
-    width: 100px;
-    height: 100px;
-    background-color: blueviolet;
-    margin: 5px;
-}
-
-
 .rodape 
 {
 	background-color: #333;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 40rem;
 }
 .ul_rodape
 {
@@ -30,7 +15,7 @@ body
 .li_rodape
 {
 	display: inline-block;
-	margin: 0 10px;
+	margin: 0 12px;
 }
 .a_rodape
 {
