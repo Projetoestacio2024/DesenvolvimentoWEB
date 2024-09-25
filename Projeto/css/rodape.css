@@ -4,7 +4,10 @@
 	color: #fff;
 	padding: 10px;
 	text-align: center;
-	margin-top: 40rem;
+	bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
 }
 .ul_rodape
 {
