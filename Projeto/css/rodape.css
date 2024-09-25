@@ -1,27 +1,52 @@
-.rodape 
-{
-	background-color: #333;
-	color: #fff;
-	padding: 10px;
-	text-align: center;
-	bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: 0px;
+.rodape {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;   /* Mantém o rodapé fixo na parte inferior da tela */
+    bottom: 0;         /* Garante que ele fique grudado na parte inferior */
+    left: 0;
+    right: 0;
+    width: 100%;       /* Ocupa toda a largura da tela */
+    z-index: 100;      /* Garante que o rodapé esteja acima de outros elementos */
+    box-sizing: border-box;
 }
-.ul_rodape
-{
-	list-style: none;
-	padding: 0;
-	margin: 0;
+
+.ul_rodape {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.li_rodape
-{
-	display: inline-block;
-	margin: 0 12px;
+
+.li_rodape {
+    display: inline-block;
+    margin: 0 12px;
 }
-.a_rodape
-{
-	color: #fff;
-	text-decoration: none;
+
+.a_rodape {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Para garantir que o conteúdo acima do rodapé seja corretamente ajustado */
+body {
+    margin: 0;
+    padding-bottom: 50px;  /* Adiciona um espaço na parte inferior para que o conteúdo não seja coberto pelo rodapé */
+    box-sizing: border-box;
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 600px) {
+    .li_rodape {
+        display: block;        /* Em telas pequenas, os itens ficam em blocos, um abaixo do outro */
+        margin: 8px 0;         /* Adiciona espaço entre os itens de rodapé */
+    }
+
+    .rodape {
+        padding: 15px 10px;    /* Aumenta o espaçamento para maior legibilidade em dispositivos móveis */
+    }
+
+    .a_rodape {
+        font-size: 16px;       /* Aumenta o tamanho da fonte para melhor leitura em dispositivos móveis */
+    }
 }
