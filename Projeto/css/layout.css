@@ -3,3 +3,9 @@ body
 {
     background-color: #ce9456;
 }
+.imagem_topo 
+{
+    width: 50%;
+    height: auto;
+    padding: 5%;
+}
