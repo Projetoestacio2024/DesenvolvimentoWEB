@@ -28,12 +28,6 @@
     text-decoration: none;
 }
 
-/* Para garantir que o conteúdo acima do rodapé seja corretamente ajustado */
-body {
-    margin: 0;
-    padding-bottom: 50px;  /* Adiciona um espaço na parte inferior para que o conteúdo não seja coberto pelo rodapé */
-    box-sizing: border-box;
-}
 
 /* Estilos responsivos para telas menores */
 @media screen and (max-width: 600px) {

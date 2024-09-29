@@ -1,7 +1,13 @@
-body {
+body 
+{
     background-color: #ce9456;
     margin: 0;
     font-family: Arial, sans-serif;
+    
+    /* Para garantir que o conteúdo acima do rodapé seja corretamente ajustado */
+    margin: 0;
+    padding-bottom: 50px;  /* Adiciona um espaço na parte inferior para que o conteúdo não seja coberto pelo rodapé */
+    box-sizing: border-box;
 }
 
 /* Estilo geral para o container */

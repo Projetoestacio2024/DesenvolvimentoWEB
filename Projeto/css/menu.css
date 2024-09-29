@@ -1,8 +1,8 @@
 /* Estilização do botão tipo hambúrguer */
 .burger {
     position: absolute;  /* Permite o posicionamento no canto da tela */
-    top: 10px;           /* Distância do topo */
-    right: 10px;         /* Distância do canto direito */
+    top: 50px;           /* Distância do topo */
+    right: 60px;         /* Distância do canto direito */
     width: 40px;
     height: 30px;
     background: transparent;
@@ -63,7 +63,8 @@
 }
 
 /* Estilização padrão do menu */
-.menu_header {
+.menu_header 
+{
     display: none;
     position: absolute;
     top: 0;
