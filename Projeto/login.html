@@ -28,6 +28,7 @@
         <a class="links" id="paralogin"></a>
          
         <div class="content">      
+
           <!--FORMULÁRIO DE LOGIN-->
           <div id="login">
             <form method="post" action=""> 
@@ -60,7 +61,7 @@
      
           <!--FORMULÁRIO DE CADASTRO-->
           <div id="cadastro">
-            <form method="post" action=""> 
+            <form action = "php/inserir.php" method = "post"> 
               <h1>Cadastro</h1> 
                
               <div class="form-row">
@@ -80,7 +81,7 @@
                 <!--Campo Nascimento -->
                 <p> 
                   <label for="nasc_cad">Data de nascimento</label>
-                  <input id="nasc_cad" name="nasc_cad" required="required" type="date" placeholder="ex. 1234"/>
+                  <input type="date" id="nasc_cad" name="nasc_cad" required="required" placeholder="ex. 1234"/>
                 </p>
               </div>
 
@@ -117,8 +118,8 @@
 
                 <!--Campo Bairro -->
                 <p> 
-                  <label for="bairo_cad">Bairro</label>
-                  <input id="bairo_cad" name="bairo_cad" required="required" type="text" placeholder="ex. Campo Grande"/>
+                  <label for="bairro_cad">Bairro</label>
+                  <input id="bairro_cad" name="bairro_cad" required="required" type="text" placeholder="ex. Campo Grande"/>
                 </p>
               </div>
 
