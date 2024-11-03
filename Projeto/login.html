@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/menu.css">
 
-    <!--ARQUIVOS JAVA SCRIPT-->
-    <script src="javascript/formulariocpf.js"></script>
-
 </head>
 <body>
 
@@ -28,7 +25,6 @@
         <a class="links" id="paralogin"></a>
          
         <div class="content">      
-
           <!--FORMULÁRIO DE LOGIN-->
           <div id="login">
             <form method="post" action=""> 
@@ -45,7 +41,7 @@
                
               <p> 
                 <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
-                <label for="manterlogado">Manter-me conectado</label>
+                <label for="manterlogado">Manter-me logado</label>
               </p>
                
               <p> 
@@ -61,7 +57,7 @@
      
           <!--FORMULÁRIO DE CADASTRO-->
           <div id="cadastro">
-            <form action = "php/inserir.php" method = "post"> 
+            <form method="post" action=""> 
               <h1>Cadastro</h1> 
                
               <div class="form-row">
@@ -75,13 +71,13 @@
                 <!--Campo CPF-->
                 <p> 
                 <label for="cpf_cad">Digite seu CPF</label>
-                <input id="cpf_cad" name="cpf_cad" required="required" type="number" placeholder="digite seu cpf" pattern="[0-9]+$"/> 
+                <input id="cpf_cad" name="cpf_cad" required="required" type="text" placeholder="digite seu cpf"/> 
                 </p>
 
                 <!--Campo Nascimento -->
                 <p> 
                   <label for="nasc_cad">Data de nascimento</label>
-                  <input type="date" id="nasc_cad" name="nasc_cad" required="required" placeholder="ex. 1234"/>
+                  <input id="nasc_cad" name="nasc_cad" required="required" type="date" placeholder="ex. 1234"/>
                 </p>
               </div>
 
@@ -103,7 +99,7 @@
                   <!--Campo Telefone -->
                   <p> 
                     <label for="tel_cad">Telefone para contato</label>
-                    <input id="tel_cad" name="tel_cad" required="required" type="number" placeholder="ex. (99) 99999-9999" pattern="[0-9]+$"/>
+                    <input id="tel_cad" name="tel_cad" required="required" type="tel" placeholder="ex. (99) 99999-9999"/>
                   </p>
               </div>
 
@@ -118,8 +114,8 @@
 
                 <!--Campo Bairro -->
                 <p> 
-                  <label for="bairro_cad">Bairro</label>
-                  <input id="bairro_cad" name="bairro_cad" required="required" type="text" placeholder="ex. Campo Grande"/>
+                  <label for="bairo_cad">Bairro</label>
+                  <input id="bairo_cad" name="bairo_cad" required="required" type="text" placeholder="ex. Campo Grande"/>
                 </p>
               </div>
 
@@ -144,6 +140,7 @@
                   <input id="comp_cad" name="comp_cad" required="required" type="text" placeholder="ex. Lote, Quadra, Apto"/>
                 </p>
               </div>
+
 
               <p><input type="submit" value="Cadastrar"/></p>
                
