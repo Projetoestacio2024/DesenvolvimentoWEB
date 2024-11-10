@@ -1,0 +1,79 @@
+body 
+{
+    background-color: #ce9456;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    
+    /* Para garantir que o conteúdo acima do rodapé seja corretamente ajustado */
+    margin: 0;
+    padding-bottom: 50px;  /* Adiciona um espaço na parte inferior para que o conteúdo não seja coberto pelo rodapé */
+    box-sizing: border-box;
+}
+
+/* Estilo geral para o container */
+.container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+}
+
+/* Estilo da imagem */
+.imagem_topo {
+    max-width: 900px; /* Limita a largura máxima da imagem */
+    width: 100%; /* Faz com que a imagem se ajuste ao tamanho do container */
+    height: auto;
+}
+
+/* Estilo do texto */
+.texto_lado_imagem {
+    font-family: 'Titan One', cursive;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column; /* Empilha a imagem e o texto verticalmente em telas menores */
+        text-align: center; /* Centraliza o texto em telas pequenas */
+    }
+
+    .imagem_topo {
+        max-width: 100%; /* Faz com que a imagem ocupe toda a largura disponível */
+    }
+
+    .texto_lado_imagem {
+        font-size: 18px; /* Aumenta um pouco o tamanho da fonte para melhorar a legibilidade em telas menores */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .texto_lado_imagem {
+        font-size: 16px; /* Ajusta a fonte para ficar confortável em dispositivos móveis */
+    }
+}
+
+
+.box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color:blanchedalmond;
+    width: auto;
+    height: 500px;
+    margin: 0 50px; /* Espaço nas laterais */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para melhor visualização */
+}
+.box img {
+    max-width: 10px;
+    margin-right: 10px;
+}
+.box .text {
+    flex: 1;
+}
