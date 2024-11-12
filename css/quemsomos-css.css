@@ -1,0 +1,102 @@
+.imagem-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-right: 1rem;
+    margin-left: 1rem;
+    text-align: left; 
+}
+
+
+/* Removido para simplificar */
+.imagem-texto .imagem img {
+    justify-content: center;
+    flex-shrink: 0;
+    width: auto; 
+    height: auto;
+    border-radius: 8px;
+}
+
+.imagem-texto .imgclass {
+    justify-content: center; 
+    margin-left: 3rem;
+}
+
+.funcionarios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Responsividade para funcionários */
+.funcionario {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    width: calc(20% - 2rem); /* Largura padrão para telas maiores */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+/* Ajustes de imagem de funcionário */
+.funcionario img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.funcionario h3 {
+    margin-top: 1rem;
+    color: #333;
+}
+
+.funcionario p {
+    margin-top: 0.5rem; /* diminui o espaçamento acima */
+    margin-bottom: 0;   /* remove o espaçamento abaixo */
+    line-height: 1.2;   /* ajusta altura da linha */
+}
+
+footer {
+    background-color: #333;
+    color: darkcyan;
+    text-align: center;
+    padding: 1rem;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 900px) {
+    .funcionario {
+        width: calc(45% - 2rem); /* Ajusta a largura para telas médias */
+    }
+
+    .imagem-texto {
+        flex-direction: column; /* Coloca a imagem e o texto em coluna */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .imagem-texto .imgclass {
+        margin-left: 0; /* Remove margem em telas menores */
+        margin-bottom: 1rem; /* Adiciona espaço abaixo da imagem */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .funcionario {
+        width: calc(100% - 2rem); /* Largura total para dispositivos móveis */
+    }
+
+    .imagem-texto {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .imagem-texto .imgclass {
+        margin-bottom: 1rem; /* Adiciona espaço abaixo da imagem */
+    }
+}
