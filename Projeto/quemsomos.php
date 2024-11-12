@@ -116,7 +116,7 @@ session_start();
 
             <!-- ITEM 3 -->
             <div class = "funcionario">
-                <img src = "imagens/icone_semfoto.png" alt = "Foto do Funcionário 3">
+                <img src = "imagens/euziane.jpg" alt = "Foto do Funcionário 3">
                 <br><br>
                 <h4>Euziane Marques</h4>
                 <p>31 Anos</p>
@@ -125,7 +125,7 @@ session_start();
 
             <!-- ITEM 4 -->
             <div class = "funcionario">
-                <img src = "imagens/icone_semfoto.png" alt = "Foto_4">
+                <img src = "imagens/paulo.png" alt = "Foto_4">
                 <br><br>
                 <h4>Paulo Sérgio</h4>
                 <p>19 Anos</p>
